@@ -1,0 +1,107 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.indbody{
+    background: #980cf4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.menu-btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    /* border: 3px solid rgb(16, 193, 39); */
+}
+.menu-btn__burger{
+    width: 50px;
+    height: 6px;
+    background: rgb(195, 220, 8);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px chocolate;
+    transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: rgb(232, 22, 22);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px chocolate;
+    transition: all .5s ease-in-out;    
+}
+
+.menu-btn__burger::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: rgb(232, 22, 22);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px chocolate;
+    transition: all .5s ease-in-out;    
+}
+
+
+
+.menu-btn__burger::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: rgb(45, 4, 165);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px chocolate;
+    transition: all .5s ease-in-out;    
+}
+.menu-btn__burger::before{
+    transform: translateY(- 16px);
+}
+
+.menu-btn__burger::after{
+    transform: translateY(16px);
+}
+
+.menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before{
+    transform: rotate(45deg) translate(35px, -35px) ;
+}
+.menu-btn.open .menu-btn__burger::after{
+    transform: rotate(-45deg) translate(35px, 35px) ;
+}
+
+.nav {
+    content: '';
+    position: absolute;
+    justify-content: top;
+    align-items: top;
+    right: 0px;
+    left: 5px;
+    width: 100%;   
+    color: rgb(187, 53, 8);
+    height: 30px;
+    font: bold;
+}
+.nav .navbar-brand{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+
+
